@@ -1,0 +1,10 @@
+{
+  "name": "Fiut",
+  "bio": "Twórca na TikTok i Reddit. Zapraszam na mój serwer Discord!",
+  "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Felix",
+  "links": [
+    { "title": "Discord", "url": "https://discord.gg/twoj-link", "icon": "💬" },
+    { "title": "TikTok", "url": "https://tiktok.com/@twoj-nick", "icon": "🎵" },
+    { "title": "Reddit", "url": "https://reddit.com/u/twoj-nick", "icon": "🤖" }
+  ]
+}
