@@ -43,3 +43,36 @@ async function loadProfile() {
 
 // Uruchom ładowanie po wczytaniu strony
 window.onload = loadProfile;
+
+/* --- LOGIKA PRZEŁĄCZANIA KART --- */
+
+function switchCard(cardType, event) {
+    // 1. Znajdź wszystkie karty i przyciski
+    const allCards = document.querySelectorAll('.glass-container');
+    const allButtons = document.querySelectorAll('.dock-item');
+    const targetCard = document.getElementById(`card-${cardType}`);
+
+    // 2. Jeśli karta już jest aktywna, nic nie rób
+    if (targetCard.classList.contains('active-card')) return;
+
+    // 3. Obecna aktywna karta dostaje efekt wyjścia w lewo
+    const currentActive = document.querySelector('.active-card');
+    if (currentActive) {
+        currentActive.classList.remove('active-card');
+        currentActive.classList.add('exit-left');
+        
+        // Resetujemy jej pozycję po zakończeniu animacji (ukrywamy ją)
+        setTimeout(() => {
+            currentActive.classList.remove('exit-left');
+        }, 600);
+    }
+
+    // 4. Aktywujemy nową wybraną kartę
+    targetCard.classList.add('active-card');
+
+    // 5. Zmieniamy wygląd przycisków w menu bocznym
+    allButtons.forEach(btn => btn.classList.remove('active'));
+    if (event) {
+        event.currentTarget.classList.add('active');
+    }
+}
