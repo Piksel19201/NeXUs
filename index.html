@@ -3,11 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bio Link | Premium</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Nexus Bio | Profile Card</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+    <div id="intro-screen" onclick="startExperience()">
+        <div class="intro-content">
+            <img src="assets/nex.png" class="intro-logo" alt="Logo">
+            <h1 class="intro-nick">Piksel19201</h1>
+            <p class="intro-prompt">Kliknij, aby przegladać...</p>
+        </div>
+
+    <div class="intro-footer footer-right">
+        All Rights Reserved <span id="current-year"></span>
+    </div>
+
+    <div class="intro-footer footer-left">
+        Developed by Piksel19201
+    </div>
+</div>
+
     <div class="stars"></div>
+    <div class="noise"></div>
+
     <div class="menu-wrapper">
         <button class="menu-trigger" onclick="toggleMenu()">
             <div class="dot"></div>
@@ -15,41 +33,68 @@
         </button>
         <nav id="side-menu" class="glass-menu">
             <ul>
-                <li><a href="#">Strona Główna</a></li>
-                <li><a href="https://github.com/TwojUser" target="_blank">Kod źródłowy</a></li>
-                <li><a href="mailto:kontakt@example.com">Zgłoś błąd</a></li>
+                <li><a href="?u=default">Mój Profil</a></li>
+                <li><a href="#">Ustawienia</a></li>
+                <li><a href="#">Wyloguj</a></li>
             </ul>
         </nav>
     </div>
 
-   <main id="app" class="scene">
-    <div class="cards-wrapper">
-        <div id="card-profile" class="glass-container active-card">
-            <div class="avatar-wrapper">
-                <img id="user-avatar" src="" alt="Avatar">
+    <div id="music-card">
+        <button class="nav-btn prev" onclick="changeTrack('prev')">‹</button>
+        <button class="nav-btn next" onclick="changeTrack('next')">›</button>
+
+        <div id="player-main-content" class="player-body active-track">
+            <div class="cover-container">
+                <img src="" id="track-cover" alt="Cover">
             </div>
-            <h1 id="user-name">Ładowanie...</h1>
-            <p class="status-tag">@Online</p>
+            <div class="text-info">
+                <h3 id="track-title">Ładowanie...</h3>
+                <p id="track-artist">by Proszę czekać</p>
+            </div>
+            <button id="master-play" onclick="togglePlay()">▶</button>
+        </div>
+        <audio id="audio-player"></audio>
+    </div> <main id="app">
+        <div class="cards-wrapper">
+            <div id="card-profile" class="glass-container active-card profile-card-layout">
+                <div class="profile-banner-wrapper">
+                    <img id="user-banner" src="banner.png" alt="Banner">
+                </div>
+                <div class="avatar-shifted-wrapper">
+                    <img id="user-avatar" src="assets/nex.png" alt="Avatar">
+                </div>
+                <div class="profile-content">
+                    <h1 id="user-name">Ładowanie...</h1>
+                    <div class="status-tag">Online</div>
+                    <p id="user-subtitle" class="profile-subtitle">Twórca treści</p>
+                </div>
+            </div>
+
+            <div id="card-bio" class="glass-container">
+                <h2>Opis</h2>
+                <div id="bio-list" class="bio-list"></div>
+            </div>
+
+            <div id="card-media" class="glass-container">
+                <h2>Social Media</h2>
+                <div id="links-container" class="links-stack"></div>
+            </div>
         </div>
 
-        <div id="card-bio" class="glass-container hidden-card">
-            <h2>O mnie</h2>
-            <p id="user-bio" class="bio-text"></p>
-        </div>
+        <nav class="side-navigation">
+            <button class="nav-pill active" onclick="switchCard('profile', event)">
+                <span class="label">Profil</span>
+            </button>
+            <button class="nav-pill" onclick="switchCard('bio', event)">
+                <span class="label">Opis</span>
+            </button>
+            <button class="nav-pill" onclick="switchCard('media', event)">
+                <span class="label">Media</span>
+            </button>
+        </nav>
+    </main>
 
-        <div id="card-media" class="glass-container hidden-card">
-            <h2>Social Media</h2>
-            <div id="links-container" class="links-stack"></div>
-        </div>
-    </div>
-
-    <nav class="side-dock">
-        <button class="dock-item" onclick="switchCard('profile')" title="Profil">👤</button>
-        <button class="dock-item" onclick="switchCard('bio')" title="Opis">📄</button>
-        <button class="dock-item" onclick="switchCard('media')" title="Media">🔗</button>
-    </nav>
-</main>
-
-    <script src="script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
-</html>
+<html>
