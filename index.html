@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio Link | Premium</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="menu-wrapper">
+        <button class="menu-trigger" onclick="toggleMenu()">
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </button>
+        <nav id="side-menu" class="glass-menu">
+            <ul>
+                <li><a href="#">Strona Główna</a></li>
+                <li><a href="https://github.com/TwojUser" target="_blank">Kod źródłowy</a></li>
+                <li><a href="mailto:kontakt@example.com">Zgłoś błąd</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main id="app">
+        <div class="profile-card glass-container">
+            <div class="avatar-wrapper">
+                <img id="user-avatar" src="https://via.placeholder.com/120" alt="Avatar">
+            </div>
+            
+            <h1 id="user-name">Ładowanie...</h1>
+            <p id="user-bio">Pobieranie danych profilu...</p>
+
+            <div id="links-container" class="links-stack">
+                </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
