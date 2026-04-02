@@ -22,19 +22,33 @@
         </nav>
     </div>
 
-    <main id="app">
-        <div class="profile-card glass-container">
+   <main id="app" class="scene">
+    <div class="cards-wrapper">
+        <div id="card-profile" class="glass-container active-card">
             <div class="avatar-wrapper">
-                <img id="user-avatar" src="https://via.placeholder.com/120" alt="Avatar">
+                <img id="user-avatar" src="" alt="Avatar">
             </div>
-            
             <h1 id="user-name">Ładowanie...</h1>
-            <p id="user-bio">Pobieranie danych profilu...</p>
-
-            <div id="links-container" class="links-stack">
-                </div>
+            <p class="status-tag">@Online</p>
         </div>
-    </main>
+
+        <div id="card-bio" class="glass-container hidden-card">
+            <h2>O mnie</h2>
+            <p id="user-bio" class="bio-text"></p>
+        </div>
+
+        <div id="card-media" class="glass-container hidden-card">
+            <h2>Social Media</h2>
+            <div id="links-container" class="links-stack"></div>
+        </div>
+    </div>
+
+    <nav class="side-dock">
+        <button class="dock-item" onclick="switchCard('profile')" title="Profil">👤</button>
+        <button class="dock-item" onclick="switchCard('bio')" title="Opis">📄</button>
+        <button class="dock-item" onclick="switchCard('media')" title="Media">🔗</button>
+    </nav>
+</main>
 
     <script src="script.js"></script>
 </body>
