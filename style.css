@@ -800,3 +800,89 @@ body:has(#intro-screen:not(.fade-out)) .noise {
     0%, 100% { opacity: 0.5; }
     50% { opacity: 1; }
 }
+
+/* --- NEXUS BIOENGINE: MOBILE OPTIMIZATION --- */
+@media (max-width: 768px) {
+    /* 1. Ustawienia tła i ogólne */
+    body {
+        overflow-x: hidden; /* Zapobiega drganiu strony na boki przy animacjach */
+    }
+
+    /* 2. Karty (Główna treść) */
+    .cards-wrapper {
+        width: 92% !important;
+        margin: 20px auto;
+        padding-top: 60px; /* Zostaw miejsce na górny margines */
+    }
+
+    .glass-container {
+        padding: 15px !important;
+        border-radius: 20px !important;
+    }
+
+    /* 3. Nawigacja (Dolny pasek dla kciuka) */
+    .side-navigation {
+        position: fixed !important;
+        bottom: 15px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        flex-direction: row !important; /* Przyciski obok siebie */
+        width: 90% !important;
+        background: rgba(0, 0, 0, 0.6) !important;
+        backdrop-filter: blur(15px);
+        padding: 8px !important;
+        border-radius: 40px !important;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        z-index: 9999;
+        justify-content: space-around;
+    }
+
+    .nav-pill {
+        padding: 10px 15px !important;
+        flex: 1; /* Każdy przycisk zajmuje tyle samo miejsca */
+        text-align: center;
+    }
+
+    .nav-pill .label {
+        font-size: 13px !important;
+    }
+
+    /* 4. Odtwarzacz Muzyki (Mniejszy i wyżej nad nawigacją) */
+    #music-card {
+        width: 85% !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        top: auto !important;
+        bottom: 90px !important; /* Nad dolnym menu */
+        height: auto !important;
+    }
+
+    .player-body {
+        gap: 10px !important;
+        padding: 8px !important;
+    }
+
+    #track-cover {
+        width: 45px !important;
+        height: 45px !important;
+    }
+
+    #track-title {
+        font-size: 14px !important;
+    }
+
+    /* 5. Avatar i Banner */
+    .profile-banner-wrapper img {
+        height: 120px !important; /* Niższy baner na telefonie */
+    }
+
+    .avatar-shifted-wrapper img {
+        width: 90px !important;
+        height: 90px !important;
+        margin-top: -45px !important; /* Podciągnięcie avatara wyżej */
+    }
+
+    #user-name {
+        font-size: 1.6rem !important;
+    }
+}
