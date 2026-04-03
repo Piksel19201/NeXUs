@@ -1,6 +1,6 @@
 {
   "name": "Piksel",
-  "subtitle": "Hej jestem Piksel",
+  "subtitle": "Hej jestem Piksel\n\nFurry\nBi\nŚląskie",
   "avatar": "assets/nex.png",
   "banner": "./assets/las.png",
   "pages": [
@@ -10,7 +10,7 @@
     { "id": "hardware", "label": "Hardware", "type": "bio" }
   ],
   "bio_tiles": [
-    { "title": "Zainteresowania 💻", "value": "Programowanie i design." }
+    { "title": "Zainteresowania", "value": "Interesuje się szeroko pojętą technologią, głównie elektroniką, ale programowanie nie jest mi też obce, jak widać\nPotrafię też projektować modele w F360, oraz drukować w FDM w 3D" }
   ],
   "hardware_tiles": [
     { "title": "Procesor 🧠", "value": "AMD Ryzen 7 5800X" },
