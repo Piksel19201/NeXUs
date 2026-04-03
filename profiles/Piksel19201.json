@@ -10,7 +10,7 @@
     { "id": "hardware", "label": "Hardware", "type": "bio" }
   ],
   "bio_tiles": [
-    { "title": "Zainteresowania", "value": "Interesuje się szeroko pojętą technologią, główne elektroniką, lecz programowanie nie jest mi też obce, jak widać. Potrafię projektować w F360, drukować w 3D" }
+    { "title": "Zainteresowania", "value": "Interesuje się szeroko pojętą technologią, główne elektroniką, lecz programowanie nie jest mi też obce, jak widać.\n Potrafię projektować w F360, drukować w 3D" }
   ],
   "hardware_tiles": [
     { "title": "CPU", "value": "AMD Ryzen 7 5800X" },
