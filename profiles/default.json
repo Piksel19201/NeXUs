@@ -1,0 +1,44 @@
+{
+  "name": "Piksel",
+  "subtitle": "Hej jestem Piksel",
+  "avatar": "assets/nex.png",
+  "banner": "./assets/las.png",
+  "pages": [
+    { "id": "profile", "label": "Profil", "type": "profile" },
+    { "id": "bio", "label": "O mnie", "type": "bio" },
+    { "id": "media", "label": "Sociale", "type": "links" },
+    { "id": "hardware", "label": "Hardware", "type": "bio" }
+  ],
+  "bio_tiles": [
+    { "title": "Zainteresowania 💻", "value": "Programowanie i design." }
+  ],
+  "hardware_tiles": [
+    { "title": "Procesor 🧠", "value": "AMD Ryzen 7 5800X" },
+    { "title": "Grafika 🎮", "value": "NVIDIA RTX 3080" },
+    { "title": "RAM ⚡", "value": "32GB DDR4 3600MHz" }
+  ],
+  "links": [
+    { "title": "Discord", "url": "#", "icon": "👾" },
+    { "title": "TikTok", "url": "#", "icon": "📱" }
+  ],
+  "songs": [
+    { 
+      "title": "Zadzwonię później", 
+      "artist": "Opał", 
+      "src": "assets/ZPO.mp3", 
+      "cover": "" 
+    },
+    { 
+      "title": "Do góry dnem", 
+      "artist": "StrikeR", 
+      "src": "assets/DGDS.mp3", 
+      "cover": "assets/do-g-ry-dnem-300x300.jpg" 
+    },
+    {
+      "title": "Magnolia", 
+      "artist": "Opał", 
+      "src": "assets/MO.mp3", 
+      "cover": "" 
+    }
+  ]
+}
