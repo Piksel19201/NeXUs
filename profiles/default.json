@@ -15,10 +15,10 @@
   "hardware_tiles": [
     { "title": "PC", "value": "CPU: Amd Ryzen 7 5800X\nGPU: NVIDIA RTX 3080 Palit\nRAM: 32Gb DDR4 3600MTS\nMOBO: Asus B550-E Gaming\nCase: NZXT H510i Elite\nPWR: Chieftec 650W Gold" },
     { "title": "Peryferia", "value": "Monitory: Asus 24in 144Hz, LG 27in 75Hz, Philips 65in 60Hz TV\nKlawiatura: WobKey\nMyszki: Steelseries Rival 3 Lav Wirelles, Logitech G502\nSłuchawki: Seenheiser Accentum Plus, B&O BeoPlay Eleven, Steelseries Arctis 5 Gen 1" },
-    { "title": "RAM", "value": "32GB DDR4 3600MTS"}
-    { "title": "Mobo", "value": "Asus B550-E Gaming"}
-    { "title": "CASE", "value": "NZXT H510i Elite"}
-    { "title": "PWR", "value": "Chieftec 650W Gold"}
+    { "title": "RAM", "value": "32GB DDR4 3600MTS" },
+    { "title": "Mobo", "value": "Asus B550-E Gaming" },
+    { "title": "CASE", "value": "NZXT H510i Elite" },
+    { "title": "PWR", "value": "Chieftec 650W Gold" }
   ],
   "links": [
     { "title": "Discord", "url": "#", "icon": "👾" },
